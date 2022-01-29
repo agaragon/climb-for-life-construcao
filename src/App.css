@@ -14,9 +14,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(./assets/images/climb.jpg);
   min-height: 100vh;
+  background-size: cover;
+  background-repeat:no-repeat;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
