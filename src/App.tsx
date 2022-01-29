@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
+import BurgerMenu from './components/BurgerMenu';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <BurgerMenu />
+      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <ul className="navbar-nav mr-auto">
           <li><Link to={'/'} className="nav-link"> Home </Link></li>
           <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
           <li><Link to={'/about'} className="nav-link">About</Link></li>
         </ul>
-      </nav>
+      </nav> */}
       {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

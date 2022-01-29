@@ -17,7 +17,7 @@ ReactDOM.render(
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
       </Routes>
-    </React.StrictMode>,
+    </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
 );
