@@ -1,15 +1,28 @@
-import { slide as Menu } from 'react-burger-menu'
-import styles, { BMList } from './BurgerMenu.styles'
-import { Link } from 'react-router-dom';
+import { BMList, BurgerMenuContainer } from './BurgerMenu.styles'
+import SideBar from '../SideBar';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+    selectBurgerMenu,
+    showSideBar,
+} from '../../features/burgerMenu/displayBurgerMenu'
+
+
 
 function BurgerMenu() {
-    return (<Menu styles={styles} >
-        <BMList className='burger-items'>
-            <li><Link to={'/'} className="nav-link"> Home </Link></li>
-            <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
-            <li><Link to={'/about'} className="nav-link">About</Link></li>
-        </BMList>
-    </Menu>)
+    const burgerMenuState = useSelector(selectBurgerMenu);
+    const dispatch = useDispatch();
+    return (
+        <BurgerMenuContainer onClick={() => {
+            dispatch(showSideBar())
+        }}>
+            <BMList className='burger-items'>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+                <SideBar />
+            </BMList>
+        </BurgerMenuContainer>
+    )
 }
 
 export default BurgerMenu
