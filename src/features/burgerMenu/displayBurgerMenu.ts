@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const burgerInicialState = {
-    value: true,
+    value: false,
 };
 
 export const burgerMenuSlice = createSlice({
@@ -18,9 +18,6 @@ export const burgerMenuSlice = createSlice({
 });
 
 export const { showSideBar, hideSideBar } = burgerMenuSlice.actions;
-export const selectBurgerMenu = (state) => {
-    console.log(state.burgerMenu.value)
-    return state.burgerMenu.value
-};
+export const selectBurgerMenu = (state) => state.burgerMenu.value
 
 export default burgerMenuSlice.reducer;

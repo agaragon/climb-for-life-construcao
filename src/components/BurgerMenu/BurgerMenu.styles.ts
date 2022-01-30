@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const BMList = styled.ul`
+export const BMLines = styled.ul`
     list-style-type:none;
+
     padding:10px 20px 10px 20px;
     margin:0;
     a{
@@ -25,10 +26,16 @@ export const BMList = styled.ul`
 export const BurgerMenuContainer = styled.button`
     cursor: pointer;
     width: 5rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display:none;
     height:60px;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0);
     border:none;
+    position:fixed;
+    top:0;
+    left:0;
+    @media screen and (max-width: 600px) {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
 `
