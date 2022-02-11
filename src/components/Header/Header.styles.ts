@@ -9,16 +9,37 @@ export const Container = styled.div`
     background-color:black;
     width:100vw;
     background-color:rgb(0,0,0,0);
+    .center-div{
+        width:30vw;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:left;
+    }
+    .left-div{
+        width:20vw;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-around;
+    }
+    .contact{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
     a{
         text-align:left;
-        color: white;
         text-decoration: none;
+        color: white;
         
     }
     li{
+        color: white;
         list-style-type:none;
         margin-top:0.5rem;
-        font-size:1.25rem;
+        letter-spacing: .02em;
     }
     .line{
         height:0.25rem;
@@ -30,9 +51,16 @@ export const Container = styled.div`
         display:flex;
         align-items:center;
         justify-content:space-between;
+        padding:0 40px 0 40px;
     }
-    .left{
-        width:30vw;
+    .main{
+        width:100vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    .instagram-logo{
+        height:4rem;
     }
     @media screen and (max-width: 599px) {
         display:none;

@@ -2,6 +2,7 @@ import BurgerMenu from './components/BurgerMenu';
 import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar/SideBar';
+import Presentation from './components/Presentation/Presentation';
 
 function App() {
   return (
@@ -9,12 +10,8 @@ function App() {
       <BurgerMenu />
       <SideBar />
       <Header />
-      <header className="App-header">
-
-        <p>
-          Gostaria de me apresentar, como uma oportunidade de mudar de vida.
-        </p>
-      </header>
+      <Presentation />
+      {/* <div className='presentation'></div> */}
     </div>
   );
 }
