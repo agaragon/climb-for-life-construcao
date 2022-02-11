@@ -6,7 +6,7 @@ function Presentation() {
         <Container>
             <div className='presentation'>
                 <div className='description'>
-                    <Description>Climb 4 life é um programa de mentoria baseado em 4 pilares: estilo de vida, como lidamos com as emoções, o ambiente e a alimentação</Description>
+                    <Description>Uma nova forma de viver a vida</Description>
                 </div>
             </div>
         </Container>

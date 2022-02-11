@@ -16,7 +16,6 @@ function Header() {
                         <li><Link to={'/home'} className="nav-link">Climb4Life</Link></li>
                     </div>
                     <li className='contact'>Contato <a href='https://www.instagram.com/climb4life/' target='_blank'><img className='instagram-logo' src={InstagramLogo} alt="instagram Logo" /></a></li>
-
                 </ul>
             </div>
         </Container>
