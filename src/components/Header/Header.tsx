@@ -9,22 +9,69 @@ const Header: React.FC = () => {
       <div className="left">
         <ul>
           <li>
-            <Link to="/about">SOBRE</Link>
+            <Link className="header-link" to="/about">
+              SOBRE
+            </Link>
           </li>
           <li>
-            <Link to="/about">PROGRAMAS</Link>
+            <Link className="header-link" to="/about">
+              PROGRAMAS
+            </Link>
           </li>
           <li>
-            <Link to="/about">MEDITAÇÃO</Link>
+            <Link className="header-link" to="/about">
+              MEDITAÇÃO
+            </Link>
           </li>
         </ul>
       </div>
       <div className="center">
-        {/* <InstagramLogo /> */}
         <ul>
-          <li className="contact">
-            Contato{" "}
-            <a href="https://www.instagram.com/climb4life/" target="_blank">
+          <li>
+            <a
+              href="https://www.instagram.com/climb4life/"
+              target="_blank"
+              rel="noreferrer"
+              className="instagram-link"
+            >
+              <img
+                className="instagram-logo"
+                src={InstagramLogo}
+                alt="instagram Logo"
+              />
+            </a>
+          </li>
+          <li>
+            <Link className="header-link" to="\">
+              Climb 4 Life
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="right">
+        <ul>
+          <li>
+            <Link className="header-link" to="\contact">
+              CONTATO
+            </Link>
+          </li>
+          <li>
+            <a
+              className="instagram-link-1"
+              href="https://www.instagram.com/climb4life/"
+            >
+              <img
+                className="instagram-logo"
+                src={InstagramLogo}
+                alt="instagram Logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="instagram-link-2"
+              href="https://www.instagram.com/climb4life/"
+            >
               <img
                 className="instagram-logo"
                 src={InstagramLogo}
@@ -33,9 +80,7 @@ const Header: React.FC = () => {
             </a>
           </li>
         </ul>
-        <Link to="\">Climb 4 Life</Link>
       </div>
-      <div className="right"></div>
     </Container>
   );
 };
