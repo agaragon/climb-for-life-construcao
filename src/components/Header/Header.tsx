@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./Header.styles";
 import InstagramLogo from "../../assets/images/instagram.svg";
+import Climb4Life from "../../assets/images/C4LLogo";
+import C4LLogo from "../../assets/images/C4LLogo";
 
 const Header: React.FC = () => {
   return (
@@ -34,17 +36,8 @@ const Header: React.FC = () => {
               rel="noreferrer"
               className="instagram-link"
             >
-              <img
-                className="instagram-logo"
-                src={InstagramLogo}
-                alt="instagram Logo"
-              />
+              <C4LLogo />
             </a>
-          </li>
-          <li>
-            <Link className="header-link" to="\">
-              Climb 4 Life
-            </Link>
           </li>
         </ul>
       </div>

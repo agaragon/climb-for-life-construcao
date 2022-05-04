@@ -5,6 +5,10 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-around;
   background-color: #942728;
+  .c4l-logo{
+    color: #ffffff;
+    height: 2.5rem;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -38,14 +42,14 @@ export const Container = styled.div`
     justify-content: center;
     .instagram-link {
       position:relative;
-      top: -1.2rem;
-      left: 3rem;
+      top: -0.5rem;
     }
   }
   .right {
     display: flex:
     align-items: center;
     justify-content: center;
+    // width: 33vw;
     li {
       width: 2rem;
     }
