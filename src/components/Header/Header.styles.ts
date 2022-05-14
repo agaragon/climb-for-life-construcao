@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #942728;
   .c4l-logo{
     color: #ffffff;
@@ -14,8 +14,8 @@ export const Container = styled.div`
     text-decoration: none;
     opacity: 1;
   }
-  .instagram-logo {
-    height: 4rem;
+  .instagram-logo-thin {
+    height: 2rem;
   }
   ul {
     display: flex;
@@ -49,17 +49,21 @@ export const Container = styled.div`
     display: flex:
     align-items: center;
     justify-content: center;
-    // width: 33vw;
+    margin-right:3rem;
     li {
-      width: 2rem;
+      width:auto;
     }
-    .instagram-link-1 {
+    .instagram-link {
       position:relative;
-      top: -1.2rem;
+      top:-0.2rem;
+      color:#ffffff;
       }
-    .instagram-link-2 {
+    .whats-app-logo {
       position:relative;
-      top: -1.2rem;
+      top:-0.1rem;
+      color: #ffffff;
+      height:1.8rem;
+      width:1.8rem;
       }
     }
 `;

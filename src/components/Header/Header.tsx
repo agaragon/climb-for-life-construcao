@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./Header.styles";
-import InstagramLogo from "../../assets/images/instagram.svg";
-import Climb4Life from "../../assets/images/C4LLogo";
+import InstagramLogoThin from "../../assets/images/InstagramLogoThin";
+import WhatsAppLogo from "../../assets/images/WhatsAppLogo";
 import C4LLogo from "../../assets/images/C4LLogo";
 
 const Header: React.FC = () => {
@@ -50,26 +50,18 @@ const Header: React.FC = () => {
           </li>
           <li>
             <a
-              className="instagram-link-1"
+              className="instagram-link"
               href="https://www.instagram.com/climb4life/"
             >
-              <img
-                className="instagram-logo"
-                src={InstagramLogo}
-                alt="instagram Logo"
-              />
+              <InstagramLogoThin />
             </a>
           </li>
           <li>
             <a
-              className="instagram-link-2"
+              className="whats-app-logo"
               href="https://www.instagram.com/climb4life/"
             >
-              <img
-                className="instagram-logo"
-                src={InstagramLogo}
-                alt="instagram Logo"
-              />
+              <WhatsAppLogo />
             </a>
           </li>
         </ul>
