@@ -1,10 +1,11 @@
 import styled from "styled-components";
-
+import { headerHeight } from "../../globals";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #942728;
+  height: ${headerHeight};
   .c4l-logo{
     color: #ffffff;
     height: 2.5rem;
