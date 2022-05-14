@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { mainFont } from "../../globals";
 
 export const Container = styled.div`
+  width: 100%;
   .image-container {
+    width: 100%;
     position: relative;
     .home-main-image {
       position: absolute;
       width: 100%;
-      height: 100vh;
+      height: 600px;
       object-fit: cover;
       object-position: 0 0;
       z-index: 0;
@@ -15,7 +17,7 @@ export const Container = styled.div`
     .project-description {
       color: #ffffff;
       position: absolute;
-      width: 35%;
+      width: 20rem;
       z-index: 1;
       font: ${mainFont};
       left: 10%;

@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   background-color: #942728;
   height: ${headerHeight};
+  min-width: min-content;
   .c4l-logo{
     color: #ffffff;
     height: 2.5rem;

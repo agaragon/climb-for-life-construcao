@@ -16,7 +16,7 @@ function Home() {
         </div>
         <ImageContainer className="home-main-image" src={escaladaHome} />
       </div>
-      <div className="about">
+      {/* <div className="about">
         <div className="left">
           <h1>Sobre</h1>
           <p>
@@ -27,7 +27,7 @@ function Home() {
           </p>
         </div>
         <div className="right"></div>
-      </div>
+      </div> */}
     </Container>
   );
 }
