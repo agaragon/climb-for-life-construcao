@@ -1,27 +1,46 @@
 import styled from "styled-components";
+import { mainFont } from "../../globals";
 
 export const Container = styled.div`
-  position: relative;
-
-  .home-main-image {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 0 0;
-    z-index: 0;
+  .image-container {
+    position: relative;
+    .home-main-image {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: 0 0;
+      z-index: 0;
+    }
+    .project-description {
+      color: #ffffff;
+      position: absolute;
+      width: 35%;
+      z-index: 1;
+      font: ${mainFont};
+      left: 10%;
+      top: 15rem;
+      h1 {
+        font-size: 2.7rem;
+        line-height: 2.8rem;
+      }
+    }
   }
-  .project-description {
-    color: #ffffff;
-    position: absolute;
-    width: 35%;
-    z-index: 1;
-    font: normal normal 600 16px/25px Poppins;
-    left: 10%;
-    top: 15rem;
-    h1 {
-      font-size: 2.7rem;
-      line-height: 2.8rem;
+  .about {
+    position: relative;
+    top: 110vh;
+    .left {
+      padding: 0 10rem 0 10rem;
+      width: 50%;
+      h1 {
+        margin: 0;
+      }
+      p {
+        line-height: 2rem;
+      }
+    }
+    .right {
+      width: 50%;
     }
   }
 `;

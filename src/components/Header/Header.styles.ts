@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { headerHeight } from "../../globals";
+import { headerHeight, mainFont } from "../../globals";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
   }
   .header-link {
-    font: normal normal 600 16px/25px Poppins;
+    font: ${mainFont};
     letter-spacing: 0px;
   }
   .left {
