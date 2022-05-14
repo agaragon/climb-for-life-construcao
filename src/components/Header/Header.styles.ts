@@ -11,7 +11,7 @@ export const Container = styled.div`
     height: 2.5rem;
   }
   a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     opacity: 1;
   }
