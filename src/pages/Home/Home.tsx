@@ -1,33 +1,21 @@
-import React from "react";
-import ImageContainer from "components/ImageContainer";
-import escaladaHome from "../../assets/images/escalada-home.jpg";
 import { Container } from "./Home.styles";
-function Home() {
+import C4LLogo from '../../assets/images/C4LLogo'
+import InstagramLogoThin from '../../assets/images/InstagramLogoThin'
+import WhatsAppLogo from '../../assets/images/WhatsAppLogo'
+import YoutubeLogo from '../../assets/images/YoutubeLogo'
+function Home()
+{
   return (
     <Container>
-      <div className="image-container">
-        <div className="project-description">
-          <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
-          <p>
-            Animi magni quis odio repellat, expedita sequi, aperiam optio
-            facilis totam tenetur mollitia fuga perspiciatis provident iusto
-            vero illo. Quibusdam, ullam magni.
-          </p>
-        </div>
-        <ImageContainer className="home-main-image" src={escaladaHome} />
+      <div className="flex-column">
+        <C4LLogo />
+        <p className="greetings">Olá, agradecemos sua visita!</p>
+        <p className="about">Somos uma escola de desenvolvimento humano.</p>
+        <p className="soon">Em breve nosso site estará no ar.</p>
+        <InstagramLogoThin />
+        <WhatsAppLogo />
+        <YoutubeLogo />
       </div>
-      {/* <div className="about">
-        <div className="left">
-          <h1>Sobre</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            ipsa autem deleniti nostrum quod labore eaque assumenda ipsum
-            placeat recusandae dolorem quis ad et possimus voluptatem,
-            exercitationem distinctio facere? Ad!
-          </p>
-        </div>
-        <div className="right"></div>
-      </div> */}
     </Container>
   );
 }
