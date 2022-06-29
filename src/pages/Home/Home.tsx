@@ -19,7 +19,7 @@ function Home()
             </a>
           </LogoContainer>
           <LogoContainer>
-            <a target="_blank" href="https://wa.me/554891434318" rel="noreferrer">
+            <a target="_blank" href="http://whts.co/ricardogonz" rel="noreferrer">
               <WhatsAppLogo />
             </a>
           </LogoContainer>
