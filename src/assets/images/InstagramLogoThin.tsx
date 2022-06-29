@@ -2,11 +2,11 @@ import React from "react";
 
 const InstagramLogoThin: React.FC = () =>
 {
-  return (
-    <svg className="instagram-logo" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-      viewBox="0 0 45 45">
-      <path id="Icon_awesome-instagram_00000139286592869997492300000008636401345365217932_"
-        fill="currentColor" d="M22.5,12.6
+	return (
+		<svg className="instagram-logo" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 45 45">
+			<path id="Icon_awesome-instagram_00000139286592869997492300000008636401345365217932_"
+				fill="currentColor" d="M22.5,12.6
 	    c-5.5,0-9.9,4.4-9.9,9.9s4.4,9.9,9.9,9.9s9.9-4.4,9.9-9.9C32.4,17,28,12.6,22.5,12.6C22.5,12.6,22.5,12.6,22.5,12.6z M22.5,29
 	    c-3.6,0-6.5-2.9-6.5-6.5s2.9-6.5,6.5-6.5s6.5,2.9,6.5,6.5C28.9,26.1,26.1,28.9,22.5,29z M35.2,12.2c0,1.3-1,2.3-2.3,2.3
 	    c-1.3,0-2.3-1-2.3-2.3s1-2.3,2.3-2.3l0,0C34.1,9.9,35.1,10.9,35.2,12.2C35.2,12.2,35.2,12.2,35.2,12.2z M41.7,14.5
@@ -15,9 +15,8 @@ const InstagramLogoThin: React.FC = () =>
 	    L41.7,14.5z M37.6,33.9c-0.7,1.7-2,3-3.7,3.7c-2.5,1-8.6,0.8-11.4,0.8s-8.9,0.2-11.4-0.8c-1.7-0.7-3-2-3.7-3.7
 	    c-1-2.6-0.8-8.6-0.8-11.4s-0.2-8.9,0.8-11.4c0.7-1.7,2-3,3.7-3.7c2.5-1,8.6-0.8,11.4-0.8s8.9-0.2,11.4,0.8c1.7,0.7,3,2,3.7,3.7
 	    c1,2.5,0.8,8.6,0.8,11.4S38.6,31.4,37.6,33.9z"/>
-    </svg>
-
-  );
+		</svg>
+	);
 };
 
 export default InstagramLogoThin;
