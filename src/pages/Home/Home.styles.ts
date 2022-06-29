@@ -63,6 +63,7 @@ export const Container = styled.div`
 		font-weight: normal;
 		text-align: center;
 		margin: 40px 0 0 0;
+		line-height: 45px;
 	}
 	.about {
 		font-size: 26px;
@@ -71,7 +72,8 @@ export const Container = styled.div`
 		font-weight: normal;
 		color: #ffffff;
 		text-align: center;
-		margin: 0 0 0 0;
+		margin: 1rem 0 0 0;
+		line-height: 34px;
 	}
 	.soon {
 		font-size: 26px;
@@ -80,7 +82,8 @@ export const Container = styled.div`
 		font-weight: 600;
 		color: #f9b03f;
 		text-align: center;
-		margin: 0 0 40px 0;
+		margin: 1rem 0 40px 0;
+		line-height: 34px;
 	}
 	.rights {
 		text-align: center;
