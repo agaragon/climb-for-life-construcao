@@ -1,33 +1,36 @@
-import React from "react";
-import ImageContainer from "components/ImageContainer";
-import escaladaHome from "../../assets/images/escalada-home.jpg";
-import { Container } from "./Home.styles";
-function Home() {
+import { Container, LogoContainer } from "./Home.styles";
+import C4LLogo from '../../assets/images/C4LLogo'
+import WhatsAppLogo from '../../assets/images/WhatsAppLogo'
+import InstagramLogoThin from '../../assets/images/InstagramLogoThin'
+import YoutubeLogo from '../../assets/images/YoutubeLogo'
+function Home()
+{
   return (
     <Container>
-      <div className="image-container">
-        <div className="project-description">
-          <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
-          <p>
-            Animi magni quis odio repellat, expedita sequi, aperiam optio
-            facilis totam tenetur mollitia fuga perspiciatis provident iusto
-            vero illo. Quibusdam, ullam magni.
-          </p>
+      <div className="flex-column">
+        <C4LLogo />
+        <p className="greetings">Olá, agradecemos sua visita!</p>
+        <p className="about">Somos uma escola de desenvolvimento humano.</p>
+        <p className="soon">Em breve nosso site estará no ar.</p>
+        <div className="flex-row">
+          <LogoContainer>
+            <a target="_blank" href="https://www.instagram.com/climb4life/" rel="noreferrer">
+              <InstagramLogoThin />
+            </a>
+          </LogoContainer>
+          <LogoContainer>
+            <a target="_blank" href="https://wa.me/554891434318" rel="noreferrer">
+              <WhatsAppLogo />
+            </a>
+          </LogoContainer>
+          <LogoContainer>
+            <a target="_blank" href="https://www.youtube.com/c/Climb4Life" rel="noreferrer">
+              <YoutubeLogo />
+            </a>
+          </LogoContainer>
         </div>
-        <ImageContainer className="home-main-image" src={escaladaHome} />
+        <p className="rights">@Todos os direitos reservados</p>
       </div>
-      {/* <div className="about">
-        <div className="left">
-          <h1>Sobre</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            ipsa autem deleniti nostrum quod labore eaque assumenda ipsum
-            placeat recusandae dolorem quis ad et possimus voluptatem,
-            exercitationem distinctio facere? Ad!
-          </p>
-        </div>
-        <div className="right"></div>
-      </div> */}
     </Container>
   );
 }

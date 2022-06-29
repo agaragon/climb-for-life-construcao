@@ -1,48 +1,93 @@
 import styled from "styled-components";
-import { mainFont } from "../../globals";
 
 export const Container = styled.div`
-  width: 100%;
-  .image-container {
-    width: 100%;
-    position: relative;
-    .home-main-image {
-      position: absolute;
-      width: 100%;
-      height: 600px;
-      object-fit: cover;
-      object-position: 0 0;
-      z-index: 0;
-    }
-    .project-description {
-      color: #ffffff;
-      position: absolute;
-      width: 20rem;
-      z-index: 1;
-      font: ${mainFont};
-      left: 10%;
-      top: 15rem;
-      h1 {
-        font-size: 2.7rem;
-        line-height: 2.8rem;
-      }
-    }
-  }
-  .about {
-    position: relative;
-    top: 110vh;
-    .left {
-      padding: 0 10rem 0 10rem;
-      width: 50%;
-      h1 {
-        margin: 0;
-      }
-      p {
-        line-height: 2rem;
-      }
-    }
-    .right {
-      width: 50%;
-    }
-  }
+	background-color: #444142;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.c4l-logo {
+		color: #f9b03f;
+		height: 259px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 100%;
+		width: fit-content;
+		block-size: fit-content;
+		padding: 0 15px 0 10px;
+		.c4l-logo {
+			margin-top: 30px;
+			height: 150px;
+		}
+	}
+	.youtube-logo {
+		height: 40px;
+		color: #ffffff;
+		margin-top: 5px;
+		margin-left: 2px;
+	}
+	.instagram-logo {
+		height: 40px;
+		color: #ffffff;
+		margin-top: 5px;
+	}
+	.whatsapp-logo {
+		margin-top: 5px;
+		height: 40px;
+		color: #ffffff;
+	}
+	.flex-column {
+		display: flex;
+		flex-direction: column;
+	}
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 0 50px 0 50px;
+	}
+	.greetings {
+		font-size: 42px;
+		font-family: "Poppins", sans-serif;
+		color: #ffffff;
+		font-weight: normal;
+		text-align: center;
+		margin: 40px 0 0 0;
+	}
+	.about {
+		font-size: 26px;
+		font-family: "Poppins", sans-serif;
+		letter-spacing: 0.52px;
+		font-weight: normal;
+		color: #ffffff;
+		text-align: center;
+		margin: 0 0 0 0;
+	}
+	.soon {
+		font-size: 26px;
+		font-family: "Poppins", sans-serif;
+		letter-spacing: 0.52px;
+		font-weight: 600;
+		color: #f9b03f;
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+	.rights {
+		text-align: center;
+		font-size: 12px;
+		font-family: "Poppins", sans-serif;
+		color: #ffffff;
+		margin-top: 30px;
+	}
+`;
+
+export const LogoContainer = styled.div`
+	width: 73px;
+	height: 73px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #d49a2f;
 `;
