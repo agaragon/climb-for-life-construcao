@@ -53,7 +53,7 @@ export const Container = styled.div`
 	.flex-row {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: center;
 		padding: 0 50px 0 50px;
 	}
 	.greetings {
@@ -69,7 +69,7 @@ export const Container = styled.div`
 		font-size: 26px;
 		font-family: "Poppins", sans-serif;
 		letter-spacing: 0.52px;
-		font-weight: normal;
+		font-weight: 300;
 		color: #ffffff;
 		text-align: center;
 		margin: 1rem 0 0 0;
@@ -79,10 +79,10 @@ export const Container = styled.div`
 		font-size: 26px;
 		font-family: "Poppins", sans-serif;
 		letter-spacing: 0.52px;
-		font-weight: 600;
+		font-weight: 400;
 		color: #f9b03f;
 		text-align: center;
-		margin: 1rem 0 40px 0;
+		margin: 0 0 40px 0;
 		line-height: 34px;
 	}
 	.rights {
@@ -97,6 +97,7 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
 	width: 73px;
 	height: 73px;
+	margin: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
