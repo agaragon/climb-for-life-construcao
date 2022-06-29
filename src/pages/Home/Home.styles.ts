@@ -20,7 +20,16 @@ export const Container = styled.div`
 			height: 10rem;
 		}
 	}
-
+	@media screen and (max-width: 1000px) and (max-height: 600px) {
+		height: 100%;
+		width: fit-content;
+		block-size: fit-content;
+		padding: 0 15px 0 10px;
+		.c4l-logo {
+			margin-top: 4rem;
+			height: 10rem;
+		}
+	}
 	.youtube-logo {
 		height: 40px;
 		color: #ffffff;
