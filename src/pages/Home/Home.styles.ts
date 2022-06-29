@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	background-color: #444142;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -17,10 +16,11 @@ export const Container = styled.div`
 		block-size: fit-content;
 		padding: 0 15px 0 10px;
 		.c4l-logo {
-			margin-top: 30px;
-			height: 150px;
+			margin-top: 4rem;
+			height: 10rem;
 		}
 	}
+
 	.youtube-logo {
 		height: 40px;
 		color: #ffffff;
