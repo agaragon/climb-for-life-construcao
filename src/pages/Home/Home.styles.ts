@@ -11,6 +11,16 @@ export const Container = styled.div`
 		color: #f9b03f;
 		height: 259px;
 	}
+	@media screen and (max-width: 600px) {
+		height: 100%;
+		width: fit-content;
+		block-size: fit-content;
+		padding: 0 15px 0 10px;
+		.c4l-logo {
+			margin-top: 30px;
+			height: 150px;
+		}
+	}
 	.youtube-logo {
 		height: 40px;
 		color: #ffffff;
