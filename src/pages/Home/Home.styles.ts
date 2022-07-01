@@ -54,7 +54,6 @@ export const Container = styled.div`
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		padding: 0 50px 0 50px;
 	}
 	.greetings {
 		font-size: 42px;
@@ -92,15 +91,21 @@ export const Container = styled.div`
 		color: #ffffff;
 		margin-top: 30px;
 	}
+	@media screen and (min-width: 600px) {
+		padding: 0 50px 0 50px;
+	}
 `;
 
 export const LogoContainer = styled.div`
 	width: 73px;
 	height: 73px;
-	margin: 1rem;
+	margin: 0.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	background-color: #d49a2f;
+	@media screen and (min-width: 600px) {
+		margin: 1rem;
+	}
 `;
